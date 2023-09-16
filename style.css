@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+#result-summary-container {
+ display: flex;
+ flex-direction: column;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#7857ff, #2e2be9);
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 375px;
+    
+}
+
+#summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+#score {
+    width: 130px;
+    height: 130px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: linear-gradient(#7857ff, #2f2cc8);
+}
+
+#your-score {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#max-score {
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+#text {
+    font-size: 1rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+#summary h4 {
+    align-self: start;
+    padding: 30px;
+
+}
+
+.summary-scores {
+    width: 320px;
+    height: 60px;
+    display:  flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-scores p{
+    align-self: center;
+}
+
+.scores-icons {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#reaction {
+    color: #ff5757;
+    background-color: #ff575710;
+}
+
+#memory {
+    color: #ffb01f;
+    background-color: #ffb01f10;
+}
+
+#verbal {
+    color: #00bd91;
+    background-color: #00bd9110;
+}
+
+#visual {
+    color: #1125d4;
+    background-color: #1125d410;
+}
+
+.score-container {
+    display: flex;
+    
+}
+
+.score_variable {
+    color: black;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.score-max {
+    color: black;
+    opacity: 0.5;
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+button {
+    width: 320px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #303b5a;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.icon-text {
+    display: flex;
+}
+
+@media (min-width: 379px){
+
+    #result-summary-container {
+        flex-direction: row;
+       }
+
+    #result {
+        margin-right: 50px;
+    }
+
+}
