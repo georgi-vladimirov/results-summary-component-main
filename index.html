@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="doIt()">
   <div id="result-summary-container">
     <div id="result">
       <p>Your Result</p>
@@ -26,11 +26,11 @@
       <h4>Summary</h4>
       <div id="reaction" class="summary-scores">
         <div class="icon-text">
-          <img src="./assets/images/icon-reaction.svg" alt="reaction img" class="scores-icons">
+          <img src="" alt="reaction img" class="scores-icons">
           <P>Reaction</P>
         </div>
         <div class="score-container">
-          <p class="score_variable">80</p>
+          <p id="reaction-score" class="score_variable">80</p>
           <p class="score-max">/ 100</p>
         </div>
       </div>
@@ -40,7 +40,7 @@
           <P>Memory</P>
         </div>
         <div class="score-container">
-          <p class="score_variable">92</p>
+          <p id="memory-score" class="score_variable">92</p>
           <p class="score-max">/ 100</p>
         </div>
       </div>
@@ -50,7 +50,7 @@
           <P>Verbal</P>
         </div>
         <div class="score-container">
-          <p class="score_variable">61</p>
+          <p id="verbal-score" class="score_variable">61</p>
           <p class="score-max">/ 100</p>
         </div>
       </div>
@@ -60,11 +60,11 @@
           <P>Visual</P>
         </div>
         <div class="score-container">
-          <p class="score_variable">72</p>
+          <p id="visual-score" class="score_variable">72</p>
           <p class="score-max">/ 100</p>
         </div>
       </div>
-      <button id="button" onclick="doIt()">Continue</button>
+      <button id="button">Continue</button>
     </div>
   </div>
   <script src="./index.js"></script>
