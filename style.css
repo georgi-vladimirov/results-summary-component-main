@@ -139,6 +139,11 @@ button {
     margin-bottom: 20px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: blue;
+  }
+
 .icon-text {
     display: flex;
 }
